@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import Die from './Components/Die';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { nanoid } from 'nanoid';
 import Confetti from 'react-confetti';
 
@@ -20,7 +20,7 @@ function App() {
   }
 
   function haveTheSameValue (arr) {
-    return dice.every((die) => die.value == dice[0].value);
+    return dice.every((die) => die.value === dice[0].value);
   }
 
   function generateNewDie() {
